@@ -24,7 +24,7 @@ This repository contains the code, experiments, and results from the paper *Pixe
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/PixelShuffler.git
+    git clone https://github.com/OmarSZamzam/PixelShuffler.git
     cd PixelShuffler
     ```
 
