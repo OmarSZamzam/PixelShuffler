@@ -1,0 +1,11 @@
+lpips==0.1.4
+matplotlib==3.5.3
+monai==1.2.0
+numpy==1.23.5
+Pillow==10.4.0
+scikit_learn==1.2.2
+scipy==1.14.1
+torch==2.0.1
+torchvision
+tqdm==4.66.2
+wandb==0.15.12
