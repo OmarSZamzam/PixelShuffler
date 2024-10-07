@@ -1,5 +1,7 @@
 # PixelShuffler: A Simple Image Translation Through Pixel Rearrangement
 
+> This repository contains the implementation of the paper: [PixelShuffler: A Simple Image Translation Through Pixel Rearrangement](https://arxiv.org/abs/2410.03021).
+
 <div align="center">
   <img src="Figures/Demonstration.gif" alt="PixelShuffler Gif" width="600"/>
 </div>
