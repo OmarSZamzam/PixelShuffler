@@ -55,3 +55,16 @@ To run the style transfer with all default settings:
 ```bash
 python style_transfer.py --content <path_to_content_image> --style <path_to_style_image>
 ```
+
+## Citation
+
+If you find this work useful, please cite the paper:
+
+```bibtex
+@article{zamzam2024pixelshuffler,
+  title={PixelShuffler: A Simple Image Translation Through Pixel Rearrangement},
+  author={Zamzam, Omar},
+  journal={arXiv preprint arXiv:2410.03021},
+  year={2024}
+}
+```
