@@ -21,6 +21,22 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Main function to perform the style transfer
 def style_transfer(content_img_path, style_img_path, loss_modes, size=512, epochs=1000):
+    """
+    Perform style transfer by aligning a style image to a content image using 
+    multiple loss functions and an iterative optimization process.
+
+    Args:
+        content_img_path (str): Path to the content image file.
+        style_img_path (str): Path to the style image file.
+        loss_modes (list of str): List of loss modes to use, which can include 
+            "MI" (Mutual Information), "LPIPS" (Learned Perceptual Image Patch Similarity), 
+            and "Style" (Style loss based on features).
+        size (int, optional): Size to which the images are resized. Default is 512.
+        epochs (int, optional): Number of iterations for optimization. Default is 1000.
+
+    Returns:
+        None: Saves the final stylized image as 'Stylized.jpg'.
+    """
     # Load and preprocess images
     content_image = load_image(content_img_path, size).to(device)
     style_image = load_image(style_img_path, size).to(device)
