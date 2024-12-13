@@ -20,7 +20,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 # Main function to perform the style transfer
-def style_transfer(content_img_path, style_img_path, loss_modes, size=512, epochs=1000):
+def style_transfer(content_img_path: str, style_img_path: str, loss_modes: list[str], size: int = 512, epochs: int = 1000) -> None:
     """
     Perform style transfer by aligning a style image to a content image using 
     multiple loss functions and an iterative optimization process.

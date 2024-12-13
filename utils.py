@@ -1,3 +1,4 @@
+import numpy as np
 import torch
 import torch.nn.functional as F
 import torchvision.transforms as transforms
@@ -17,7 +18,7 @@ for param in vgg.parameters():
     param.requires_grad = False
 
 
-def gram_matrix(features):
+def gram_matrix(features: torch.Tensor) -> torch.Tensor:
     """
     Compute the Gram matrix for a given set of features.
 
@@ -34,7 +35,7 @@ def gram_matrix(features):
 
 
 # Function to compute Gram Style Loss
-def gram_style_loss(img1, img2):
+def gram_style_loss(img1: torch.Tensor, img2: torch.Tensor) -> torch.Tensor:
     """
     Compute the Gram Style Loss between two images.
 
@@ -62,7 +63,7 @@ def gram_style_loss(img1, img2):
 dvf_to_ddf = DVF2DDF()
 
 
-def set_seed(seed=42):
+def set_seed(seed: int = 42) -> None:
     """
     Set random seed for reproducibility.
 
@@ -76,7 +77,7 @@ def set_seed(seed=42):
     torch.backends.cudnn.benchmark = False
 
 
-def tensor_to_numpy(tensor):
+def tensor_to_numpy(tensor: torch.Tensor) -> np.ndarray:
     """
     Convert a PyTorch tensor to a NumPy array.
 
@@ -89,7 +90,7 @@ def tensor_to_numpy(tensor):
     return tensor.squeeze().permute(1, 2, 0).cpu().detach().numpy()
 
 
-def load_image(path, size):
+def load_image(path: str, size: int | tuple[int, int]) -> torch.Tensor:
     """
     Load and preprocess an image from a file.
 
@@ -105,7 +106,7 @@ def load_image(path, size):
     )(Image.open(path).convert("RGB")).unsqueeze(0)
 
 
-def compute_style_loss(img1, img2):
+def compute_style_loss(img1: torch.Tensor, img2: torch.Tensor) -> torch.Tensor:
     """
     Compute the style loss between two images using mean and standard deviation of features.
 
