@@ -1,6 +1,8 @@
 # PixelShuffler: A Simple Image Translation Through Pixel Rearrangement
 
-> This repository contains the implementation of the paper: [PixelShuffler: A Simple Image Translation Through Pixel Rearrangement](https://ieeexplore.ieee.org/document/11084515).
+[![Paper](https://img.shields.io/badge/Paper-ICIP%202025-blue)](https://ieeexplore.ieee.org/document/11084515)
+
+This repository contains the implementation of the paper: [PixelShuffler: A Simple Image Translation Through Pixel Rearrangement](https://ieeexplore.ieee.org/document/11084515).
 
 <div align="center">
   <img src="Figures/Demonstration.gif" alt="PixelShuffler Gif" width="600"/>
