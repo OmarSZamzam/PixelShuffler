@@ -1,6 +1,6 @@
 # PixelShuffler: A Simple Image Translation Through Pixel Rearrangement
 
-> This repository contains the implementation of the paper: [PixelShuffler: A Simple Image Translation Through Pixel Rearrangement](https://arxiv.org/abs/2410.03021).
+> This repository contains the implementation of the paper: [PixelShuffler: A Simple Image Translation Through Pixel Rearrangement](https://ieeexplore.ieee.org/document/11084515).
 
 <div align="center">
   <img src="Figures/Demonstration.gif" alt="PixelShuffler Gif" width="600"/>
@@ -61,10 +61,12 @@ python style_transfer.py --content <path_to_content_image> --style <path_to_styl
 If you find this work useful, please cite the paper:
 
 ```bibtex
-@article{zamzam2024pixelshuffler,
-  title={PixelShuffler: A Simple Image Translation Through Pixel Rearrangement},
+@inproceedings{zamzam2025pixelshuffler,
+  title={PixelShuffler: a simple image translation through pixel rearrangement},
   author={Zamzam, Omar},
-  journal={arXiv preprint arXiv:2410.03021},
-  year={2024}
+  booktitle={2025 IEEE International Conference on Image Processing (ICIP)},
+  pages={1360--1365},
+  year={2025},
+  organization={IEEE}
 }
 ```
